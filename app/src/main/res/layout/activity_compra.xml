@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.luiz1.nocash.FragmentHomeProduto"
+    android:background="@drawable/bgrecarga">
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutCod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="105dp"
+        android:textColorHint="#ffffff"
+        android:padding="10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtCOD_USER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtNrDocumento"
+            android:layout_alignStart="@+id/txtNrDocumento"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:hint="Código do parceiro"
+            android:inputType="textPersonName">
+
+        </android.support.design.widget.TextInputEditText>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="280dp"
+        android:textColorHint="#ffffff"
+        android:padding="10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtVL_COMPRA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnsubmit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="68dp"
+            android:ems="10"
+            android:hint="Valor da Compra"
+            android:inputType="textPersonName" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:background="@color/accent_material_dark_1"
+        android:text="COMPRAR" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutCod"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textInputLayoutCod"
+        android:layout_marginTop="45dp"
+        android:text="Compra do Produto"
+        android:textAlignment="center"
+        android:textColor="@color/button_text_color"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

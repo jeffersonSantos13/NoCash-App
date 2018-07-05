@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.luiz1.nocash.PagamentoActivity"
+    android:background="@drawable/bgpgto">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+
+
+    <EditText
+        android:id="@+id/txtcard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbarnav"
+        android:singleLine="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="98dp"
+        android:ems="10"
+        android:hint="N° do Cartão de Crédito"
+        android:inputType="number" />
+
+
+
+    <Spinner
+        android:id="@+id/spinmes"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtcard"
+        android:layout_below="@+id/txtcard"
+        android:layout_marginTop="51dp" />
+
+    <Spinner
+        android:id="@+id/spinano"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtcard"
+        android:layout_alignTop="@+id/spinmes" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinano"
+        android:layout_alignStart="@+id/spinmes"
+        android:layout_marginBottom="9dp"
+        android:text="Data de Vencimento"
+        android:textColor="@color/button_text_color"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtcod"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinano"
+        android:layout_below="@+id/spinano"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="N°"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtcod"
+        android:layout_alignStart="@+id/spinmes"
+        android:layout_marginBottom="10dp"
+        android:text="Código de Segurança:"
+        android:textColor="@color/button_text_color"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnEfetuarPagamento"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/txtcod"
+        android:layout_marginTop="63dp"
+        android:background="#6cb907"
+        android:text="Efetuar Pagamento" />
+
+</RelativeLayout>
+
+
+
